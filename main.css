@@ -29,6 +29,10 @@ header span {
   color: #E38888;
 }
 
+header a {
+  color: #E38888;
+}
+
 #myInfo {
   float:left;
 }
@@ -41,6 +45,7 @@ header span {
 #contact {
   float:right;
   margin-top:.75em;
+  text-align: right;
 }
 
 img {
@@ -57,7 +62,7 @@ img {
   margin-left:auto;
   display: flex;
   justify-content: space-between;
-  max-width:750px;
+  max-width:650px;
 }
 
 .apps img {
