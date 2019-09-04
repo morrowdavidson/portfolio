@@ -1,0 +1,69 @@
+body {
+  background-color: #F1F1F1;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 1em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  height: 80px;
+}
+
+header h1, header h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  padding:0px;
+  margin:0px;
+}
+
+header h2 {
+  font-family: "Red Hat Text";
+  font-size: 18px;
+  margin-left:.25em;
+}
+
+header span {
+  color: #E38888;
+}
+
+#myInfo {
+  float:left;
+}
+
+#contact p {
+  margin:0;
+  padding:0;
+  margin-bottom:.6em;
+}
+#contact {
+  float:right;
+  margin-top:.75em;
+}
+
+img {
+  display: block;
+  margin-right:auto;
+  margin-left:auto;
+  max-width:100%;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+.apps {
+  margin-right:auto;
+  margin-left:auto;
+  display: flex;
+  justify-content: space-between;
+  max-width:750px;
+}
+
+.apps img {
+  margin-right:10px;
+  margin-left:10px;
+}
+
+
+
