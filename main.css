@@ -29,6 +29,10 @@ header span {
   color: #E38888;
 }
 
+.accent {
+  color: #E38888;
+}
+
 header a {
   color: #E38888;
 }
@@ -70,5 +74,16 @@ img {
   margin-left:10px;
 }
 
+.container {
+  padding-top: 50px;
+}
 
+a.portfolio {
+  background-color: #E38888;
+}
+
+em {
+    color: #E38888;
+    font-weight: lighter;
+}
 
