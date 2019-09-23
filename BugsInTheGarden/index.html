@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Garden Pests</title>
+<!-- Sencha Touch CSS -->
+<link rel="stylesheet" href="CSS/application.css" type="text/css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="CSS/insects.css" type="text/css">
+
+<!-- Sencha Touch JS -->
+<script type="text/javascript" src="JS/sencha-touch.js"></script>
+<!-- Application JS -->
+<script type="text/javascript" src="JS/index.js"></script>
+<script type="text/javascript" src="JS/insectInfo.js"></script>
+<script type="text/javascript" src="JS/simfla.ux.plugins.linkButton.js"></script>
+
+</head>
+<body>
+<textarea id="insectPanelTpl" style="display:none">
+ <div class="quickInfo">
+             
+     <tpl if="currentInsect.actualSize">  
+     <h3>Adult</h3>
+     <img class="mainImg" src="IMG/{name}.png" />
+     <div class="actualSize {actualSize}">  
+         <h3>Actual Length</h3>  
+         <div class="lineContainer {upto}">
+         	<div class="line"></div>    
+         	<div class="actualSizeNum">{actualSizeNum}-</div>  
+        </div>  
+        <div class="actualSizeImg"><img src="IMG/{name}.png" /></div>
+      	</div>
+      </tpl>
+      <tpl if="currentInsect.larvaSize">  
+      	<h3 class="larva">Larva</h3><img class="mainImg {larvaOrientation}" src="IMG/{name}Larva.png" />
+        <div class="actualSize {larvaSize}">
+      		<h3>Actual Length</h3>
+        	<div class="lineContainer">
+        		<div class="line"></div>
+      			<div class="actualSizeNum">{larvaSizeNum}-</div>
+      		</div>
+        	<div class="actualSizeImg"><img src="IMG/{name}Larva.png" />
+         </div>    
+      </tpl>    
+ 
+     </div>
+ </div>
+ <div class="description">
+     <h2>{title}</h2>
+     <p>{description}</p>
+     
+     <tpl if="currentInsect.type=='pest'">
+     <h3>Plants Affected</h3>
+     <p>{plantsAffected}</p>
+     <h3>Damage</h3>
+     <p>{damage}</p>
+     <h3>Management</h3>
+     <p>{management}</p>
+     </tpl>
+     
+     <tpl if="currentInsect.type=='beneficial'">
+     <h3>Pests They Control</h3>
+    <p>{pestControl}</p>
+    <h3>How to Attract</h3>
+    <p>{howToAttract}</p>
+     </tpl>
+ 
+ </div>
+ </div>
+ </textarea>
+ <textarea id="insectThumbTpl" style="display:none">
+ 	<div id="{name}selection" class="selection"></div>
+    <img src="IMG/{name}{imgType}" width="100" height="100" />  
+    <div class="caption"><span class="{type}Code">b</span>{title}</div>					 		
+</textarea>
+
+<textarea id="larvaThumbTpl" style="display:none">
+ 	<div id="{name}larvaselection" class="selection"></div>
+    <img src="IMG/{name}Larva{imgType}" width="100" height="100" />  
+    <div class="caption"><span class="{type}Code">b</span>{title}</div>					 		
+</textarea>
+ 
+</body>
+</html>
