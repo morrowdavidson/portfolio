@@ -1,0 +1,349 @@
+@charset "UTF-8";
+body {
+    background: rgb(242,242,242);
+}
+
+body > * {
+    background: rgb(242,242,242);
+}
+
+
+.app_icon_img{
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+	width:150px;
+	height:150px;
+	margin-top:10px;
+}
+
+.feedback_panel p{
+	color:#FFF;
+	text-align:center;
+	margin:10px;
+}
+.feedback_panel p.version{
+	padding-top:0px;
+	margin-top:5px;
+	font-size:12px;
+	font-weight:normal;
+}
+.feedback_panel h1{
+	text-align:center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top:30px;
+	margin-bottom:10px;
+	color:#FFF;
+
+}
+.feedback_panel{
+	background:	rgb(0,0,0);
+}
+.like_button{
+	margin-bottom:5px;
+}
+
+.legend{
+	font-size: 12px;
+	margin:5px;
+	margin-bottom:0px;
+	margin-top:0px;
+	padding:2.5px;
+	padding-bottom:10px;
+	border-top:solid 1px #c7c7c7;
+}
+.PestCode{
+	display:none;	
+}
+.BeneficialCode{
+	background: #53D769; 	
+	-webkit-border-radius:5px;
+	padding-right:2px;
+	padding-left:2px;
+	margin-right:2px;
+	color: rgb(242,242,242);
+}
+
+div.selection{
+	background-color:rgba(083,215,105,.5);
+	background-repeat:repeat-x;
+	z-index: 1000;	
+	position:absolute;
+	-webkit-border-radius:5px;
+	padding:0px;
+	height: 200px;
+}
+.x-toolbar-title{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #3aa256;
+}
+.photoCaption{
+	font-size:10px;
+	background-color:rgba(242,242,242,.75);
+	color:#000;
+	position:absolute;
+	bottom:30px;
+	padding:5px;
+}
+.photoName{
+	font-size:14px;
+}
+.photoSciName{
+	font-size:12px;
+	font-style:italic;
+}
+.insectPhoto{
+	width:100%;
+}
+
+.x-fullscreen{
+	 background: rgb(242,242,242);
+}
+
+.x-toolbar-title{
+	font-weight:normal;	
+}
+
+
+
+ 
+.insectCarousel {
+	position:absolute;	
+}
+
+.insectContainer .caption {
+	text-align: center;
+	font-size: 11px;
+	font-weight:normal;
+	text-overflow: ellipsis;
+	width:100px;
+	overflow:hidden;
+	white-space: nowrap;
+	margin-top: -4px;
+
+}
+
+.insectContainer {
+	float: left;
+	width: 100px;
+	padding: 2px;
+	padding-bottom:1px;
+	padding-top:1px;
+	margin: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+
+}
+
+.insectContainer img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width:100px; 
+	height:100px;
+}
+
+.cabbageWhiteImg {
+	margin: -10px;
+}
+#insectPanel {
+	background-image: url(../../IMG/detailsBackground.png);
+	background-repeat: repeat-y;
+}
+.quickInfo {
+	float: left;
+	width: 140px;
+}
+.description {
+	margin-left:150px;
+}
+.description h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #000;
+		margin-left: 10px;
+		margin-top:15px;
+}
+.description p {
+	font-size: 13px;
+	line-height: 19px;
+	margin: 10px;
+	margin-right:15px;
+	
+}
+.description h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000;
+		margin: 10px;
+
+}
+.actualSizeImg {
+	float:left;
+	margin-left:5px;
+}
+
+.actualSize {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-align: center;
+	font-weight: bold;
+	color: #000;
+}
+.mainImg {
+	height: 130px;
+	width: 130px;
+	margin-left: 5px;
+}
+
+
+.line {
+	width:1px;
+	background-color:#000;
+	float:right;
+}
+
+.fiftieth .line {
+	height:3px;	
+	margin-top:7px;
+}
+
+.eigth .line {
+	height:20px;
+}
+
+.fourth .line {
+	height:45px;	
+}
+
+.third .line {
+	height:55px;
+}
+
+.half .line{
+	height:85px;	
+}
+
+.threefourth .line {
+	height:125px;
+}
+
+.inch .line{
+	height:165px;	
+}
+
+.inchhalf .line{
+	height:245px;
+}
+
+.twoinch .line{
+	height:330px;	
+}
+
+.actualSizeNum {
+	float: right;
+	font-weight:normal;
+	margin-right:-1px;
+}
+
+.eigth .actualSizeNum {
+	margin-top:2px;	
+}
+
+.fourth .actualSizeNum {
+	margin-top:15px;
+	
+}
+
+.third .actualSizeNum {
+	margin-top:20px;
+	
+}
+
+.half .actualSizeNum {
+	margin-top:30px;
+}
+
+.threefourth .actualSizeNum {
+	margin-top:45px;	
+}
+
+.inch .actualSizeNum {
+	margin-top:60px;	
+}
+
+.inchhalf .actualSizeNum {
+	margin-top:90px;	
+}
+
+.twoinch .actualSizeNum {
+	margin-top:130px;
+}
+
+.lineContainer{
+	float: left;
+	padding-bottom: 20px;
+
+}
+
+.eigth .lineContainer{
+	width:75px;
+}
+
+.fourth .lineContainer {
+	width: 65px;
+}
+
+.third .lineContainer {
+	width: 55px;
+}
+
+.threefourth .lineContainer, .inchhalf .lineContainer, .half .lineContainer, .fiftieth .lineContainer, .inch .lineContainer, .twoinch .lineContainer{
+	width:75px;
+}
+
+.eightinch .lineContainer {
+	width:95px;
+}
+
+.quickInfo .actualSize h3 {
+	margin-top:5px;
+	font-weight: normal;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+.quickInfo h3 {
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	color: #000;
+	clear:both;
+	margin-bottom:0px;
+	padding:0px;
+}
+
+.horizontal{
+	margin-top:-20px;
+	margin-bottom:-20px;
+}
+
+.fourth .up {
+	width:80px;
+}
+.small_title{
+	font-size: 12px;
+}
+.underline{
+	text-decoration: underline;
+}
+
+
+
