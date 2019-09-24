@@ -311,6 +311,7 @@ Ext.define('BugApp.store.InsectInfo', {
 			},
 			{
 				id:'cucumberBeetle',
+				spriteFile:001,
 				spriteRow:9,
 				spriteCol:0, 
 				insectid:'cucumberBeetle',
@@ -651,7 +652,6 @@ Ext.define('BugApp.store.InsectInfo', {
 				larvaPx:55,
 				larvaRowPx:-385,
 				larvaColPx:-55,
-				larvaOrientation:'horizontal',
 				description:'Brownish yellow beetles w/ 16 spots on wing covers. Larva are yellowish orange w/ multiple spines. Found in states east of the Mississippi; also in Texas, Arizona, Utah, Colorado, &amp; Nebraska.',
 				pestControl:'',
 				howToAttract:'',

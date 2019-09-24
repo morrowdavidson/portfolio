@@ -131,7 +131,7 @@ div.selection{
 	padding: 2px;
 	padding-bottom:1px;
 	padding-top:1px;
-	margin: 0px;
+	margin: 0;
 	border-top-style: none;
 	border-right-style: none;
 	border-bottom-style: none;
@@ -151,16 +151,29 @@ div.selection{
 .cabbageWhiteImg {
 	margin: -10px;
 }
-#insectPanel {
-	background-image: url(../../IMG/detailsBackground.png);
-	background-repeat: repeat-y;
-}
+
 .quickInfo {
 	float: left;
-	width: 140px;
+	width: 40%;
+	margin-bottom:20px;
+}
+.title h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #000;
+	margin-left: 7%;
+	margin-top:20px;
+	margin-bottom:5px;
 }
 .description {
-	margin-left:150px;
+	margin-left:7%;
+	margin-right:2%;
+	width:51%;
+	min-width:125px;
+	float: left;
+	position: relative;
+	z-index: 100;
 }
 .description h2{
 	font-family: Arial, Helvetica, sans-serif;
@@ -173,8 +186,7 @@ div.selection{
 .description p {
 	font-size: 13px;
 	line-height: 19px;
-	margin: 10px;
-	margin-right:15px;
+
 	
 }
 .description h3 {
@@ -182,20 +194,24 @@ div.selection{
 	font-size: 13px;
 	font-weight: bold;
 	color: #000;
-		margin: 10px;
+	margin-top:20px;
+
 
 }
 .actualSizeImg {
 	float:left;
 	margin-left:5px;
+
 }
 
 .actualSize {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
-	text-align: center;
 	font-weight: bold;
 	color: #000;
+	margin-bottom:15px;
+	position: relative;
+	z-index:2;
 }
 .mainImg {
 	height: 130px;
@@ -207,7 +223,7 @@ div.selection{
 .line {
 	width:1px;
 	background-color:#000;
-	float:right;
+	float:left;
 }
 
 .fiftieth .line {
@@ -229,28 +245,34 @@ div.selection{
 
 .half .line{
 	height:85px;	
+	margin-left: 50px;
 }
 
 .threefourth .line {
 	height:125px;
+	margin-left: 50px;
 }
 
 .inch .line{
-	height:165px;	
+	height:165px;
+	margin-left: 50px;	
 }
 
 .inchhalf .line{
 	height:245px;
+	margin-left: 50px;
 }
 
 .twoinch .line{
-	height:330px;	
+	height:330px;
+	margin-left: 50px;	
 }
 
 .actualSizeNum {
-	float: right;
+	float: left;
 	font-weight:normal;
 	margin-right:-1px;
+	overflow:auto;
 }
 
 .eigth .actualSizeNum {
@@ -289,11 +311,9 @@ div.selection{
 
 .lineContainer{
 	float: left;
-	padding-bottom: 20px;
-
 }
 
-.eigth .lineContainer{
+/*.eigth .lineContainer{
 	width:75px;
 }
 
@@ -311,28 +331,28 @@ div.selection{
 
 .eightinch .lineContainer {
 	width:95px;
-}
+}*/
 
 .quickInfo .actualSize h3 {
 	margin-top:5px;
 	font-weight: normal;
-	font-size: 13px;
 	margin-bottom: 5px;
 }
 .quickInfo h3 {
-	font-size: 13px;
-	font-weight: bold;
-	text-align: center;
-	margin-top: 20px;
-	color: #000;
-	clear:both;
-	margin-bottom:0px;
 	padding:0px;
+	color: #777777;
+    font-size: 12px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+    position: relative;
+    text-align: center;
+    z-index: 100;
 }
 
-.horizontal{
-	margin-top:-20px;
+div.horizontal{
+	margin-top:-35px;
 	margin-bottom:-20px;
+	margin-left:-10px;
 }
 
 .fourth .up {
@@ -345,5 +365,15 @@ div.selection{
 	text-decoration: underline;
 }
 
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
 
-
+.adultContainer {
+	width:130px;
+	float:left;
+}

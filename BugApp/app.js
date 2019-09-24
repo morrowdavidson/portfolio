@@ -13,7 +13,14 @@ var filterFormPanelView;
 var insectItemTpl;
 
 
+//<debug>
+Ext.Loader.setPath({
+    'Ext': 'touch/src',
+    'BugApp': 'app'
+});
+Ext.Loader.setConfig({disableCaching: false});
 
+//</debug>
 
 Ext.application({
     name: 'BugApp',
@@ -39,13 +46,10 @@ Ext.application({
 
     isIconPrecomposed: true,
 
-    statusBarStyle: 'default',
-
 
     startupImage: {
         '320x460': 'resources/startup/320x460.jpg',
         '640x920': 'resources/startup/640x920.png',
-        '640x1136': 'resources/startup/640x1136.png',
         '768x1004': 'resources/startup/768x1004.png',
         '748x1024': 'resources/startup/748x1024.png',
         '1536x2008': 'resources/startup/1536x2008.png',
@@ -65,7 +69,7 @@ Ext.application({
 
         insectCarouselLegend = Ext.create('Ext.Panel', {
             html: '<div class="legend"><span class="BeneficialCode">b</span> - beneficial insect</div>',
-            docked:'bottom'
+            docked:'bottom',
         });
 
  
@@ -90,5 +94,5 @@ Ext.application({
 
 
         Ext.Viewport.setActiveItem(insectCarouselView);
-    }
+    },
 });

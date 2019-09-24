@@ -1,10 +1,155 @@
-// The following two lines import the default Sencha Touch theme. If you are building
-// a new theme, remove them and the add your own CSS on top of the base CSS (which
-// is already included in your app.json file).
-@import 'sencha-touch/default';
-@import 'sencha-touch/default/all';
+$ios7-blue: #53d769;
+$ios7-green: #157efb;
+$include-button-uis: true;
+@import 'sencha-touch/cupertino';
 
-// Custom code goes here..
 
-// Examples of using the icon mixin:
-// @include icon('user');
+@import 'sencha-touch/cupertino/all';
+
+
+// Your custom code goes here...
+@include icon('heart', 'k');
+@include icon('info','i');
+@include icon('warning_black','!');
+@include icon('mail','M');
+
+@include icon-font('IcoMoon', inline-font-files('pictos/icomoon.woff', woff, 'pictos/icomoon.ttf', truetype, 'pictos/icomoon.svg', svg));
+
+@include icon('heartInfo', 'h', 'IcoMoon');
+@include icon('bugphoto', 'b', 'IcoMoon');
+
+
+.x-button-label {
+	font-weight: 300;
+}
+.x-button-action .x-button-label{
+	font-weight: 500;
+}
+.x-button-decline .x-button-icon{
+	color: #FC3E39;
+} 
+.infoTabContainer{
+	padding:10px;
+	padding-right:40px;
+	padding-left:40px;
+}
+.app_icon_version_container{
+	width:150px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.app_title{
+	font-weight:500;
+	text-align: center;
+	margin-top: 10px;
+}
+.version_tag{
+	font-weight:300;
+	font-size:.8em;
+	line-height:.8em;
+
+}
+.infoTabContainer h1{
+	font-weight:300;
+	font-size:1.3em;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.infoTabContainer .x-button{
+	margin-top:5px;
+}
+.x-button-pressing .warning_black {
+	color: #FED1D0;
+}
+.insectImg {
+	width:100px;
+	height:100px;
+	background-size:300%;
+
+}
+.theImg {
+	background-size:300%;
+	width:130px;
+	height:130px;
+	margin-left:-10px;
+	float:left;
+	position:relative;
+	z-index:1;
+}
+
+.fiftieth .actualSizeImg{
+	background-size:300%;
+	height:5px;
+	width:5px;
+	margin-top:6px;
+	float:left;
+	
+}
+
+.eigth .actualSizeImg{
+	background-size:300%;
+	height: 20px;
+	width: 20px;
+	float: left;
+}
+	
+.fourth .actualSizeImg{
+	background-size:300%;
+	height: 45px;
+	width: 45px;
+	float: left;	
+}
+
+.third .actualSizeImg{
+	background-size:300%;
+	height: 55px;
+	width: 55px;
+	float: left;	
+
+}
+
+.half .actualSizeImg{
+	background-size:300%;
+	height: 85px;
+	width: 85px;
+	float: left;
+	display:none;
+
+}
+
+.threefourth .actualSizeImg{
+	background-size:300%;
+	height: 125px;
+	width: 125px;
+	float:left;
+	display: none;
+}
+
+.inch .actualSizeImg{
+	background-size:300%;
+	height:165px;
+	width: 165px;
+	float: left;
+	display:none;
+
+}
+
+.inchhalf .actualSizeImg{
+	background-size:300%;
+	height:245px;
+	width:245px;
+	float:left;
+	display:none;
+}
+
+.twoinch .actualSizeImg{
+	background-size:300%;
+	height:330px;
+	width:330px;
+	float:left;
+	display:none;
+}
+
+.eightinch .actualSizeImg{
+	display:none;	
+}

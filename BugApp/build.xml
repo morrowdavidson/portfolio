@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="BugApp" default=".help">
-    <import file="${basedir}/.sencha/app/phonegap-impl.xml"/>
-<import file="${basedir}/.sencha/app/build-impl.xml"/>
+    <import file="${basedir}/.sencha/app/build-impl.xml"/>
 
     <!--
     The following targets can be provided to inject logic before and/or after key steps

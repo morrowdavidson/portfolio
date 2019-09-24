@@ -2,8 +2,11 @@
 <html manifest="" lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>BugApp</title>
+    
+ 
+
     <style type="text/css">
          /**
          * Example of an initial loading indicator.
@@ -12,7 +15,7 @@
          */
         html, body {
             height: 100%;
-            background-color: #1985D0
+            background-color:#fff;
         }
 
         #appLoadingIndicator {
@@ -70,59 +73,13 @@
 
 
     <textarea id="insectPanelTpl" style="display:none">
-        
-    <div class="quickInfo">
-                 
-         <tpl if="currentInsect.actualSize">  
-            
-        <h3>Adult</h3>
-        <div class="theImg" style="background-position:{spriteCol*-130}px {spriteRow*-130}px;background-image:url('IMG/BugSprite{spriteFile}.jpg')"></div>
-
-        <tpl if="currentInsect.alt">  
-        
-        <div class="theImg" style="background-position:-260px {spriteRow*-130}px;background-image:url('IMG/BugSprite{spriteFile}.jpg')"></div>
-
-        </tpl>
-        
-        <div class="actualSize {actualSize}">  
-            <h3>Actual Length</h3>  
-            <div class="lineContainer {upto}">
-                <div class="line"></div>    
-                <div class="actualSizeNum">{actualSizeNum}-</div>  
-            </div>  
-             <div class="actualSizeImg" style="background-position:{actualColPx}px {actualRowPx}px;background-image:url('IMG/BugSprite{spriteFile}.jpg')"></div> 
-
-            <tpl if="currentInsect.alt">  
-        
-            <div class="actualSizeImg" style="background-position:{altColPx}px {actualRowPx}px;background-image:url('IMG/BugSprite{spriteFile}.jpg')"></div>
-
-            </tpl>
-               
-        </div>
-            
-        </tpl>
-
-        
-        <tpl if="currentInsect.larvaSize">  
-            
-        <h3 class="larva">Larva</h3>
-        <div class="theImg" style="background-position:-130px {spriteRow*-130}px;background-image:url('IMG/BugSprite{spriteFile}.jpg') "></div>
-        <div class="actualSize {larvaSize}">
-            <h3>Actual Length</h3>
-            <div class="lineContainer">
-                <div class="line"></div>
-                <div class="actualSizeNum">{larvaSizeNum}-</div>
-            </div>
-            <div class="actualSizeImg" style="background-position:{larvaColPx}px {larvaRowPx}px;background-image:url('IMG/BugSprite{spriteFile}.jpg')"></div>   
-        </div>
-        
-        </tpl>
-            
+    
+    <div class="title">    
+        <h2>{title}</h2>
     </div>
- 
+
     <div class="description">
         
-        <h2>{title}</h2>
         <p>{description}</p>
          
         <tpl if="currentInsect.type=='Pest'">
@@ -145,6 +102,88 @@
         
         </tpl>
      
+    </div>
+
+    <div class="quickInfo">
+                 
+        <tpl if="currentInsect.actualSize"> 
+        
+        <div class="imgAndActualSizeContainer">
+            
+            <div class="adultContainer"> 
+            
+                <h3>Adult</h3>
+
+                <div class="theImg" style="background-position:{spriteCol*-130}px {spriteRow*-130}px;background-image:url('IMG/BugSprite{spriteFile}.jpg')"></div>
+
+            </div>
+
+            <tpl if="currentInsect.alt">  
+            
+            <div class="adultContainer"> 
+            
+                <h3>Adult</h3>
+
+                 <div class="theImg" style="background-position:-260px {spriteRow*-130}px;background-image:url('IMG/BugSprite{spriteFile}.jpg')"></div>
+            
+            </div>
+            
+            </tpl>
+
+        
+        
+            <div class="actualSize {actualSize}">  
+                <h3>Actual Length</h3>  
+                <div class="actualSizeImg" style="background-position:{actualColPx}px {actualRowPx}px;background-image:url('IMG/BugSprite{spriteFile}.jpg')"></div> 
+                <div class="lineContainer {upto}">
+                    <div class="line"></div>    
+                    <div class="actualSizeNum">- {actualSizeNum}</div>  
+                </div>  
+                
+                <tpl if="currentInsect.alt">  
+            
+                <div class="actualSizeImg" style="background-position:{altColPx}px {actualRowPx}px;background-image:url('IMG/BugSprite{spriteFile}.jpg')"></div>
+
+                </tpl>
+                
+                <div style="clear:both"></div>
+
+            </div>
+
+        </div>
+            
+        </tpl>
+
+        
+        <tpl if="currentInsect.larvaSize">
+
+        <div class="imgAndActualSizeContainer">
+
+            <div class="adultContainer"> 
+                
+                <h3>Larva</h3>
+
+                <div class="theImg {larvaOrientation}" style="background-position:-130px {spriteRow*-130}px;background-image:url('IMG/BugSprite{spriteFile}.jpg') "></div>
+
+            </div>
+
+            <div class="actualSize {larvaSize}">
+                
+                <h3>Actual Length</h3>
+                
+                <div class="actualSizeImg" style="background-position:{larvaColPx}px {larvaRowPx}px;background-image:url('IMG/BugSprite{spriteFile}.jpg')"></div> 
+                
+                <div class="lineContainer">
+                    <div class="line"></div>
+                    <div class="actualSizeNum">- {larvaSizeNum}</div>
+                </div>
+                  
+            </div>
+        
+        </div>
+
+        </tpl>
+            
     </div>
     
     </textarea>
