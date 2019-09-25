@@ -83,7 +83,10 @@ a.portfolio {
 }
 
 em {
-    color: #E38888;
-    font-weight: lighter;
+  color: #E38888;
+  font-weight: lighter;
 }
 
+.btn {
+  width: 100%;
+}
