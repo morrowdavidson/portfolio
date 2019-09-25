@@ -31,6 +31,7 @@ header span {
 
 .accent {
   color: #E38888;
+  font-weight: lighter;
 }
 
 header a {
