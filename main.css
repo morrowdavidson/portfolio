@@ -1,5 +1,5 @@
 body {
-  background-color: #F1F1F1;
+  background-color: #F1F1F1 !important;
   font-family: sans-serif;
 }
 
@@ -7,7 +7,6 @@ header {
   padding: 1em;
   padding-top: 3em;
   padding-bottom: 2em;
-  height: 80px;
 }
 
 header h1, header h2 {
@@ -22,7 +21,8 @@ header h1, header h2 {
 header h2 {
   font-family: "Red Hat Text";
   font-size: 18px;
-  margin-left:.25em;
+  margin-bottom:1em;
+
 }
 
 header span {
@@ -39,7 +39,7 @@ header a {
 }
 
 #myInfo {
-  float:left;
+  text-align: center;
 }
 
 #contact p {
@@ -58,6 +58,17 @@ img.site, img.folder, img.app {
   margin-right:auto;
   margin-left:auto;
   max-width:100%;
+
+}
+
+
+
+
+img.browser_bar {
+  display: block;
+  margin-right:auto;
+  margin-left:auto;
+  max-width:100%;
   padding-top:25px;
   padding-bottom:25px;
 }
@@ -68,6 +79,7 @@ img.site, img.folder, img.app {
   display: flex;
   justify-content: space-between;
   max-width:650px;
+  margin-top:25px;
 }
 
 .apps img {
@@ -88,10 +100,41 @@ em {
   font-weight: lighter;
 }
 
-.btn {
+h2 .btn {
   width: 100%;
 }
 
 div.card-header {
   padding: 0px;
+}
+
+button.collapsed {
+  font-weight: lighter;
+}
+
+img.Li_logo {
+  width:30%;
+}
+
+div.border-primary {
+  border-color: #E38888 !important; 
+}
+
+.site_container {
+  border: 1px #E38888 solid;
+  display: block;
+  margin-right:auto;
+  margin-left:auto;
+  max-width:680px;
+  margin-top:25px;
+  margin-bottom:25px;
+  border-radius: .25em;
+}
+
+.bg-none {
+  background: none !important;
+}
+
+.resume {
+    max-width: 720px !important;
 }
